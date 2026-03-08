@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recent SpaceX launches including NASA crew and cargo missions to the ISS, with mission names, dates, and descriptions.">
+  <title>Space Launches &amp; Missions | NASA Space</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">NASA Space</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="launches.html" class="nav-link nav-link--current">Launches</a></li>
+          <li><a href="technology.html" class="nav-link">Technology</a></li>
+          <li><a href="live.html" class="nav-link">Live Data</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span aria-hidden="true"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></span></button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Launches &amp; Missions</h1>
+        <p class="page-hero-tagline">Recent SpaceX missions, including NASA crew and cargo flights to the ISS and other launch activity.</p>
+      </div>
+    </section>
+
+    <section class="launches section">
+      <div class="container">
+        <div class="page-intro">
+          <p>SpaceX launches include NASA’s Crew Dragon and Cargo Dragon missions to the International Space Station, Starlink satellite deployments, and other commercial and government payloads. Each mission is listed with its name, launch date, and a description of the objectives and outcome. Mission patches reflect the emblem chosen for that flight. Browse with the Previous and Next buttons to see more missions.</p>
+        </div>
+        <div class="launches-container" aria-live="polite">
+          <p class="launches-loading" id="launches-loading">Loading launches…</p>
+          <div class="launches-grid" id="launches-grid"></div>
+          <nav class="launches-pagination" id="launches-pagination" aria-label="Missions pagination" hidden>
+            <button type="button" class="btn btn--secondary" id="launches-prev" aria-label="Previous 9 missions">Previous</button>
+            <span class="launches-pagination__info" id="launches-pagination-info"></span>
+            <button type="button" class="btn btn--secondary" id="launches-next" aria-label="Next 9 missions">Next</button>
+          </nav>
+          <p class="launches-error" id="launches-error" hidden></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> NASA Space. Content and imagery from NASA and partner sources.</p>
+      <p><a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA.gov</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/launches.js"></script>
+</body>
+</html>

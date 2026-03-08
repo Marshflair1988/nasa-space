@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Who is in space now and where the International Space Station is – current crew and ISS position over Earth.">
+  <title>Live Space Data | NASA Space</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">NASA Space</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="launches.html" class="nav-link">Launches</a></li>
+          <li><a href="technology.html" class="nav-link">Technology</a></li>
+          <li><a href="live.html" class="nav-link nav-link--current">Live Data</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span aria-hidden="true"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></span></button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Live Space Data</h1>
+        <p class="page-hero-tagline">Who is in space right now and where the International Space Station is in its orbit around Earth.</p>
+      </div>
+    </section>
+
+    <section class="live-data section">
+      <div class="container">
+        <div class="page-intro">
+          <p>Humans have been living and working in space continuously since the arrival of the first ISS crew in 2000. Today, astronauts and cosmonauts from NASA, Roscosmos, ESA, JAXA, and CSA serve on the International Space Station, and China’s Tiangong station also hosts crews. The sections below show the current crew and the ISS position so you can see who is in space and where the station is over Earth.</p>
+        </div>
+        <figure class="live-hero-figure">
+          <img src="images/live-hero.jpg" alt="Human presence in low Earth orbit." width="960" height="640">
+          <figcaption>Crew members aboard the International Space Station.</figcaption>
+        </figure>
+        <div class="live-grid">
+          <article class="live-card" aria-live="polite">
+            <div class="live-card__media">
+              <img src="images/astronauts.jpg" alt="Astronauts in space." width="400" height="267">
+            </div>
+            <h2>Astronauts in Space</h2>
+            <p class="live-card-intro">The list below shows every person currently in space and the spacecraft or station they are on—for example the International Space Station (ISS) or China’s Tiangong. Crew size changes when new missions launch and when others return to Earth. NASA astronauts often fly to the ISS on SpaceX Crew Dragon spacecraft and spend about six months in orbit conducting research and maintaining the station.</p>
+            <p class="live-loading" id="astronauts-loading">Loading…</p>
+            <div class="live-content" id="astronauts-content" hidden></div>
+            <p class="live-error" id="astronauts-error" hidden></p>
+          </article>
+
+          <article class="live-card" aria-live="polite">
+            <div class="live-card__media">
+              <img src="images/iss-location.jpg" alt="ISS position in orbit." width="400" height="267">
+            </div>
+            <h2>ISS Location</h2>
+            <p class="live-card-intro">The International Space Station orbits Earth at about 400 km altitude, completing one orbit roughly every 90 minutes. The latitude and longitude below show the point on Earth directly beneath the station at the time shown. Because the ISS travels at about 28,000 km/h, its position changes constantly; the coordinates help you visualise where the station is over the planet (e.g. over an ocean, continent, or city).</p>
+            <p class="live-loading" id="iss-loading">Loading…</p>
+            <div class="live-content" id="iss-content" hidden></div>
+            <p class="live-error" id="iss-error" hidden></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> NASA Space. Content and imagery from NASA and partner sources.</p>
+      <p><a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA.gov</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/live.js"></script>
+</body>
+</html>

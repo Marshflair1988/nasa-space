@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Space technology and missions: NASA, the ISS, launches, and live information on who is in space and where the station orbits.">
+  <title>NASA Space Technology &amp; Missions | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">NASA Space</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link nav-link--current">Home</a></li>
+          <li><a href="launches.html" class="nav-link">Launches</a></li>
+          <li><a href="technology.html" class="nav-link">Technology</a></li>
+          <li><a href="live.html" class="nav-link">Live Data</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span aria-hidden="true"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></span></button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Space Technology &amp; Mission Activity</h1>
+        <p class="hero-tagline">A focused look at how we reach space, what we send there, and what is happening in orbit and beyond. Explore missions, key technologies, and live data from NASA and global space programmes.</p>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="container">
+        <h2>NASA and Space Activity</h2>
+        <p>NASA leads America’s civil space programme: crewed missions, robotic exploration, Earth science, and astrophysics. With international and commercial partners, NASA supports the International Space Station, Artemis missions to the Moon, Mars rovers, and observatories like the James Webb Space Telescope. Understanding the technology and missions behind these efforts helps explain how we reach space and what we learn there.</p>
+        <p>Here you can explore recent launches and their outcomes, the main technologies that make spaceflight possible, and current information on who is in space and where the ISS is orbiting. The image below is NASA’s Astronomy Picture of the Day, which highlights a different cosmic object or event every day.</p>
+      </div>
+    </section>
+
+    <section class="feature-cards section">
+      <div class="container">
+        <h2>Explore</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3><a href="launches.html">Launches</a></h3>
+            <p>Recent SpaceX launches, including NASA crew and cargo flights to the ISS, Starlink deployments, and commercial missions. Each entry includes the mission name, launch date, and a description of the mission and its outcome, with mission patches where available.</p>
+          </article>
+          <article class="card">
+            <h3><a href="technology.html">Technology</a></h3>
+            <p>Rockets, satellites, space telescopes, planetary rovers, the International Space Station, and deep space probes. How each technology works and why it matters for science and human exploration.</p>
+          </article>
+          <article class="card">
+            <h3><a href="live.html">Live Data</a></h3>
+            <p>Who is in space right now and which spacecraft they are on, and the current position of the International Space Station in its orbit around Earth. The crew list includes astronauts and cosmonauts on the ISS and other stations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="apod section">
+      <div class="container">
+        <h2>NASA Image of the Day</h2>
+        <div class="page-intro">
+          <p>NASA’s Astronomy Picture of the Day (APOD) features a new image or video each day, chosen and explained by professional astronomers. Subjects include galaxies, nebulae, planets, moons, spacecraft, and events like eclipses or meteor showers. The explanation describes what you are seeing and why it is significant.</p>
+        </div>
+        <div class="apod-container" aria-live="polite">
+          <p class="apod-loading" id="apod-loading">Loading image…</p>
+          <div class="apod-content" id="apod-content" hidden></div>
+          <p class="apod-error" id="apod-error" hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="container">
+        <h2>Go Further</h2>
+        <p>Browse <a href="launches.html">Launches &amp; Missions</a> for recent mission details and outcomes. Check <a href="live.html">Live Data</a> for who is in space and the current ISS position. Read the <a href="technology.html">Technology</a> section for in-depth coverage of rockets, satellites, telescopes, rovers, the ISS, and deep space exploration.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> NASA Space. Content and imagery from NASA and partner sources.</p>
+      <p><a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA.gov</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+</body>
+</html>

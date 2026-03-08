@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact NASA Space – send a message about space technology and missions.">
+  <title>Contact | NASA Space</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">NASA Space</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="launches.html" class="nav-link">Launches</a></li>
+          <li><a href="technology.html" class="nav-link">Technology</a></li>
+          <li><a href="live.html" class="nav-link">Live Data</a></li>
+          <li><a href="contact.html" class="nav-link nav-link--current">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span aria-hidden="true"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></span></button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="page-hero-tagline">Send a message. All fields are required where indicated.</p>
+      </div>
+    </section>
+
+    <section class="contact-form-section section">
+      <div class="container">
+        <div class="page-intro">
+          <p>If you have questions or feedback about space technology, NASA missions, or the content on this site, use the form below. For official NASA enquiries, press requests, or astronaut appearances, please use the contact options on <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA.gov</a>.</p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Name <span class="required">(required)</span></label>
+            <input type="text" id="contact-name" name="name" required autocomplete="name" aria-required="true">
+            <span class="field-error" id="error-name" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email <span class="required">(required)</span></label>
+            <input type="email" id="contact-email" name="email" required autocomplete="email" aria-required="true">
+            <span class="field-error" id="error-email" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject <span class="required">(required)</span></label>
+            <input type="text" id="contact-subject" name="subject" required aria-required="true">
+            <span class="field-error" id="error-subject" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message <span class="required">(required, min 10 characters)</span></label>
+            <textarea id="contact-message" name="message" rows="5" required minlength="10" aria-required="true"></textarea>
+            <span class="field-error" id="error-message" role="alert"></span>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Send message</button>
+          </div>
+          <p class="form-success" id="form-success" hidden role="status">Thank you. Your message has been sent.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> NASA Space. Content and imagery from NASA and partner sources.</p>
+      <p><a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA.gov</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/formValidation.js"></script>
+</body>
+</html>
